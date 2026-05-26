@@ -1,65 +1,41 @@
-# Offline OCR Editor (v3)
+# Offline OCR Editor
 
-A powerful, privacy-first desktop application built with Tauri and Vue 3, designed for high-performance Optical Character Recognition (OCR) and rich-text editing.
+Welcome to **Offline OCR Editor** – a powerful, privacy-first desktop application designed for high-performance Optical Character Recognition (OCR) and rich-text editing.
 
-## 🚀 Features
+## ✨ Why Offline OCR Editor?
 
-- **Offline OCR Inference:** Run OCR models completely offline on your local machine for ultimate privacy. No internet connection required after the initial model download.
-- **Math Formula Recognition:** Seamlessly convert images of mathematical formulas and equations into LaTeX code.
-- **Rich-Text Editor:** A built-in, fully-featured WYSIWYG editor (powered by Tiptap) supporting markdown shortcuts, heading formatting, text styling (bold, italic, strikethrough), and lists.
-- **Cross-Platform Support:** Built with Tauri, providing a lightweight desktop experience for Windows (and potentially other platforms), with shared UI logic for mobile devices.
-- **Cloud Synchronization & Subscriptions:** Seamless cloud login integration via Google OAuth to manage user subscriptions, bonus tokens, and synchronize premium features across devices.
-- **Dynamic UI:** Features a modern, responsive user interface with real-time status updates for model downloading and OCR processing.
+- **100% Local Processing:** Your privacy is our top priority. Core OCR models run entirely on your local machine. No internet connection is required to extract text, ensuring your sensitive documents never leave your device.
+- **Math Formula Recognition:** Easily convert images of complex mathematical formulas and equations directly into LaTeX code.
+- **Built-in Rich-Text Editor:** A fully-featured WYSIWYG editor that supports markdown shortcuts, heading formatting, text styling (bold, italic, strikethrough), and lists.
+- **Cloud Sync & Premium Features:** (Optional) Log in with your Google account to sync your subscriptions, manage premium tokens, and unlock advanced cloud-based AI OCR features when you need them.
 
-## 🛠️ Technology Stack
+## 🚀 Download & Installation
 
-- **Frontend:** [Vue 3](https://vuejs.org/) (Composition API), [Vite](https://vitejs.dev/)
-- **Backend/Desktop:** [Tauri](https://tauri.app/) (Rust)
-- **Editor:** [Tiptap](https://tiptap.dev/)
-- **Icons:** [Remix Icon](https://remixicon.com/)
-- **Math Rendering:** [MathJax](https://www.mathjax.org/)
+The application is available for **Windows (64-bit)**. 
 
-## 📦 Getting Started
+### Microsoft Store (Recommended)
+You can download and automatically update the app directly from the [Microsoft Store](#) *(Link coming soon!)*.
 
-### Prerequisites
+### Manual Installation
+1. Go to the [Releases page](../../releases) of this repository.
+2. Download the latest `.msi` or `.exe` installer (e.g., `offline.ocr_0.1.0_x64_en-US.msi`).
+3. Double-click the downloaded file and follow the installation wizard.
 
-Ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (v16 or higher recommended)
-- [Rust](https://www.rust-lang.org/tools/install)
-- [Tauri Dependencies](https://tauri.app/v1/guides/getting-started/prerequisites) (Visual Studio C++ Build Tools for Windows)
+## 💡 How to Use
 
-### Installation
+1. **Extract Text from Images:** Simply select or upload an image containing text, and the app will instantly transcribe it.
+2. **Extract Math Formulas:** Switch to the math recognition tab to handle complex equations, which will be converted directly into copyable LaTeX format.
+3. **Edit & Export:** Use the built-in rich-text editor on the right side of the application to instantly modify, format, and save your extracted results.
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/ocr-editor-v3.git
-   cd ocr-editor-v3
-   ```
+## 🔒 Privacy Policy
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+All local OCR processes happen offline. Your images and documents are processed entirely on your device's CPU/GPU. We do not collect, store, or transmit your personal files. Optional cloud features (when enabled) are secured and processed using strictly regulated enterprise APIs.
 
-### Development
+## 💬 Feedback & Support
 
-Start the development server with Hot Module Replacement (HMR):
-```bash
-npm run tauri dev
-```
+If you encounter any bugs, have feature requests, or need support, please feel free to:
+- Open an [Issue](../../issues) in this repository.
+- Contact the developer via the support email associated with the application.
 
-### Build for Production
-
-To compile and bundle the application into standard desktop installers (e.g., `.msi` and `.exe` for Windows):
-```bash
-npm run tauri build
-```
-Once the build is complete, the installers will be available in the `src-tauri/target/release/bundle/` directory.
-
-## 🔒 Privacy & Security
-
-This application prioritizes user privacy. Core OCR functionalities are executed locally on your device, ensuring that sensitive documents and images are never uploaded to a third-party server unless you explicitly utilize cloud-based premium features.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+---
+*Note: This repository is used exclusively for distributing compiled releases and tracking issues. Source code is maintained privately.*
